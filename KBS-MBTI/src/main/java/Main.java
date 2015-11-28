@@ -9,7 +9,6 @@
  * @author Rosi
  */
 import org.apache.jena.*;
-        
 public class Main {
 
     /**
@@ -21,5 +20,6 @@ public class Main {
         owlModel.getNamespaceManager().setDefaultNamespace("http://hello.com#");
         OWLNamedClass worldClass = owlModel.createOWLNamedClass("World");
         System.out.println("Class URI: " + worldClass.getURI());
-    } 
+    }
+    
 }
