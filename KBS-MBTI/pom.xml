@@ -11,6 +11,16 @@
             <artifactId>jena-core</artifactId>
             <version>3.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.protege</groupId>
+            <artifactId>protege-editor-owl</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.stanford.smi</groupId>
+            <artifactId>protege-owl</artifactId>
+            <version>3.4.4</version>
+        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

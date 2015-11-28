@@ -8,7 +8,9 @@
  *
  * @author Rosi
  */
-import org.apache.jena.*;
+import edu.stanford.smi.protegex.owl.model.OWLModel;
+import edu.stanford.smi.protegex.owl.model.OWLNamedClass;
+import edu.stanford.smi.protegex.owl.ProtegeOWL;
         
 public class Main {
 
