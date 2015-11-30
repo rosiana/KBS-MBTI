@@ -3,27 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package kbsmbti;
 
+/**
+ *
+ * @author Rosi
+ */
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
 
+public class Main
+{
+    /***********************************/
+    /* Constants                       */
+    /***********************************/
 
-/**
- *
- * @author Rosi
- * Kelas percobaan
- */
-public class KBSMBTI {
+    // where the ontology should be
+    public static final String SOURCE_URL = "./src/owl/MBTIOutput.owl";
 
-    /**
-     * @param args the command line arguments
-     */
-    public static final String SOURCE_URL = "./src/kbsmbti/MBTIOutput.owl";
-    protected static final String SOURCE_FILE = "./src/kbsmbti/MBTI.owl";
+    // where we've stashed it on disk for the time being
+    protected static final String SOURCE_FILE = "./src/owl/MBTI.owl";
 
+    // the namespace of the ontology
     public static final String NS = SOURCE_URL + "#";
 
     /***********************************/
@@ -31,7 +33,7 @@ public class KBSMBTI {
     /***********************************/
 
     public static void main( String[] args ) {
-        new KBSMBTI().run();
+        new Main().run();
     }
 
     public void run() {
@@ -70,5 +72,5 @@ public class KBSMBTI {
         // for compactness, add a prefix declaration st: (for Sam Thomas)
         m.setNsPrefix( "st", NS );
     }
-    
+
 }
