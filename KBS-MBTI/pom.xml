@@ -21,6 +21,11 @@
             <artifactId>protege-owl</artifactId>
             <version>3.4.4</version>
         </dependency>
+        <dependency>
+            <groupId>protege</groupId>
+            <artifactId>protege</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -8,9 +8,12 @@
  *
  * @author Rosi
  */
+
 import edu.stanford.smi.protegex.owl.model.OWLModel;
 import edu.stanford.smi.protegex.owl.model.OWLNamedClass;
 import edu.stanford.smi.protegex.owl.ProtegeOWL;
+
+import edu.stanford.smi.protege.*;
         
 public class Main {
 
