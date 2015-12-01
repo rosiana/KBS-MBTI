@@ -14,7 +14,10 @@ import static java.io.File.separator;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
+<<<<<<< HEAD
 import static org.semanticweb.owlapi.apibinding.OWLFunctionalSyntaxFactory.IRI;
+=======
+>>>>>>> c82e6ca474c1ae224d6c254380eb643e092b5f48
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -55,7 +58,6 @@ public class Main
         
 //        new Main().run();
     }
-
 //    public void run() throws OWLOntologyCreationException, IOException {
 //    }
 //
