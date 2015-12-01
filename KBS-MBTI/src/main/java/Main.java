@@ -8,10 +8,14 @@
  *
  * @author Rosi
  */
-import org.apache.jena.ontology.*;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.util.FileManager;
+import java.io.BufferedWriter;
+import java.io.File;
+import static java.io.File.separator;
+import java.io.FileWriter;
+import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyManager;
 
 public class Main
 {
@@ -20,43 +24,28 @@ public class Main
     /***********************************/
 
     // where the ontology should be
-    public static final String SOURCE_URL = "./src/owl/MBTIOutput.owl";
+    protected static String SOURCE_URL;
 
     // where we've stashed it on disk for the time being
-    protected static final String SOURCE_FILE = "./src/owl/MBTI.owl";
+    protected static String SOURCE_FILE;
 
-    // the namespace of the ontology
-    public static final String NS = SOURCE_URL + "#";
+//    // the namespace of the ontology
+    public static String NS;
 
     /***********************************/
     /* External signature methods      */
     /***********************************/
 
     public static void main( String[] args ) {
+        SOURCE_FILE = System.getProperty("user.dir").concat(separator).concat("src").concat(separator).concat("owl").concat(separator).concat("MBTI.owl");
+        SOURCE_URL = SOURCE_FILE;
+        NS = SOURCE_URL + "#";
+        System.out.println(SOURCE_FILE);
         new Main().run();
     }
 
     public void run() {
-        OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM );
-
-        loadModel( m );
-
-        // get an OntClass reference to one of the classes in the model
-        // note: ideally, we would delegate this step to Jena's schemagen tool
-        OntClass attack = m.getOntClass( NS + "Attack" );
-
-        // similarly a reference to the attack duration property,
-        // and again, using schemagen would be better
-        OntProperty attackDuration = m.getDatatypeProperty( NS + "HasDuration" );
-
-        // create an instance of the attack class to represent the current attack
-        Individual attack01 = m.createIndividual( NS + "attack01", attack );
-
-        // add a duration to the attack
-        attack01.addProperty( attackDuration, m.createTypedLiteral( 10 ) );
-
-        // finally, print out the model to show that we have some data
-        m.write( System.out, "Turtle" );
+        
     }
 
     /***********************************/
@@ -64,13 +53,17 @@ public class Main
     /***********************************/
 
     /** read the ontology and add it as a sub-model of the given ontmodel */
-    protected void loadModel( OntModel m ) {
-        FileManager.get().getLocationMapper().addAltEntry( SOURCE_URL, SOURCE_FILE );
-        Model baseOntology = FileManager.get().loadModel( SOURCE_URL );
-        m.addSubModel( baseOntology );
+    protected void loadModel() throws OWLOntologyCreationException {
+        File file = new File(SOURCE_FILE);
+	Writer output = new BufferedWriter(new FileWriter(file));
+		    
+        // Create our ontology manager in the usual way.
+        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();                        
 
-        // for compactness, add a prefix declaration st: (for Sam Thomas)
-        m.setNsPrefix( "st", NS );
+        File file1 = new File("ontology/OntologyOBL.owl");
+        // Now load the local copy
+        OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file1);
+        System.out.println("Loaded ontology: " + ontology);	
     }
 
 }
