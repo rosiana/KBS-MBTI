@@ -26,19 +26,11 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
-public class Main
-{
-    /***********************************/
-    /* Constants                       */
-    /***********************************/
-
-    // where the ontology should be
-    protected static String SOURCE_URL;
+public class Main{
     protected static File sourceFile;
     protected static IRI documentIRI;
     protected static OWLOntology ontology;
 
-    // where we've stashed it on disk for the time being
     protected static String SOURCE_FILE;
 
 //    // the namespace of the ontology
@@ -51,8 +43,6 @@ public class Main
 
     public static void main( String[] args ) {
         SOURCE_FILE = System.getProperty("user.dir").concat(separator).concat("src").concat(separator).concat("owl").concat(separator).concat("MBTI.owl");
-        SOURCE_URL = SOURCE_FILE;
-        NS = SOURCE_URL + "#";
         System.out.println(SOURCE_FILE);
         try {
             loadModel();
