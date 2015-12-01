@@ -1,0 +1,192 @@
+wayOfPlanning(	
+	likesToPlan J,
+	withoutPlan	P		
+)
+
+aPersonWho(
+	spontaneous P,
+	organized J,
+	sociable E,
+	loner I,
+	easyToUnderstood E,
+	hardToUnderstood I,
+	hardworker S,
+	conceptor N,
+	sensitive F,
+	logical T,
+	softhearted F,
+	bold T,
+	hasty P,
+	fastResponse J,
+	talkative E,
+	quiet I,
+	systematic J,
+	laidBack P,
+	imaginative N,
+	realistic S,
+	warm F,
+	objective T,
+	calm I,
+	curious E,
+	analytical T,
+	feeler F,
+	wise T,
+	caring F,
+	softhearted F,
+	strongheaded T,
+	devoted F,
+	diligent T
+	competent T,
+	generous F,
+	practical S,
+	innovative N
+)
+
+prefers(
+	abstractThings N,
+	exactThings S,
+	facts S,
+	ideas N,
+	theory N,
+	certainty S,
+	convincingThings T,
+	touchingThings F,
+	statements S,
+	concepts N,
+	profits T,
+	blessings F,
+	principles N,
+	sciences S,
+	practicalThings T,
+	feelings F,
+	newlyInventedThings N,
+	wellKnownThings S
+)
+
+prefersToTeach(
+	theories S,
+	applications N
+)
+
+befriends(
+	imaginativePeople N,
+	realisticPeople S,
+	smartPeople N,
+	workharderPeople S
+)
+
+wayOfWorking(
+	spontaneous P,
+	organized J
+)
+
+dominatedBy(
+	heart F,
+	mind T
+)
+
+havingASchedule(
+	feelingExcited J,
+	feelingRestricted P
+)
+
+havingASpecialJob(
+	organizing J,
+	surviving P
+)
+
+prefersTo(
+	followTheFlow P,
+	followTheSchedule J,
+	command J,
+	mingle P,
+	haveFewFriends I,
+	haveManyFriends E,
+	buildThings S,
+	createThings N,
+	makePlans J,
+	enjoyTime P,
+	supportGoodMethods S,
+	analyzesProblems N,
+	produces S,
+	designes N
+)
+
+ablesTo(
+	talksToManyPeople E,
+	talksPrivately I
+)
+
+prefersToBe(
+	wise S,
+	charming N
+)
+
+wayOfDeciding(
+	considersFacts T,
+	considersPeoplesFeeling F
+)
+
+peopleSayTheyAre(
+	open E,
+	reserved I
+)
+
+inGroup(
+	introducing E,
+	introduced I,
+	hardToTalk I,
+	easyToTalk E,
+	talkWithKnownPerson I,
+	joinTheConversation E
+)
+
+lovesSpendingTime(
+	alone I,
+	withPeople E
+)
+
+surroundedByPeople(
+	feelingMotivated E,
+	feelingUsual I
+)
+
+inParty(
+	easilyBored I,
+	alwaysHappy E,
+	talksALot E,
+	letPeopleTalks I
+)
+
+inEverydayWork(
+	enjoysTheFlow P,
+	plansEverything J,
+	doesAsHowPeopleDo S,
+	doesWithOwnWay N,
+	thinksWhatToDo P,
+	startsByDividingWorks J,
+	worksAccordingToMood P,
+	followsSchedules J
+)
+
+prefersToBeCalled(
+	logical F,
+	consistent T,
+	competent T,
+	humorous F
+)
+
+talksTo(
+	closeFriends I,
+	everyone E
+)
+
+wayOfFunReading(
+	enjoysPeculiarities N,
+	thinksAsAuthorThought S
+)
+
+prefersABossWho(
+	kindButInconsistent F,
+	sharptonguedButLogical T
+)

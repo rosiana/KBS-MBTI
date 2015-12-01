@@ -19,8 +19,7 @@ public class MainInterface extends javax.swing.JFrame {
      */
     public MainInterface() {
         initComponents();
-        question[0] = "Ketika anda pergi ke suatu tempat untuk beberapa hari, anda lebih suka";
-        question[1] = "Apakah anda lebih cenderung menjadi";
+        question[0] = "Bagaimanakah cara Anda merencanakan sesuatu?";       
     }
 
     /**
