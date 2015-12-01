@@ -19,7 +19,29 @@ public class MainInterface extends javax.swing.JFrame {
      */
     public MainInterface() {
         initComponents();
-        question[0] = "Bagaimanakah cara Anda merencanakan sesuatu?";       
+        question[0] = "Bagaimanakah cara Anda merencanakan sesuatu?"; 
+        question[1] = "Menurut Anda orang seperti apakah Anda?"; 
+        question[2] = "Manakah yang lebih Anda sukai?"; 
+        question[3] = "Jika Anda adalah seorang guru, pelajaran seperti apakah yang lebih suka Anda ajarkan?"; 
+        question[4] = "Teman seperti apakah yang lebih Anda sukai?";
+        question[5] = "Bagaimanakah cara Anda bekerja?";
+        question[6] = "Manakah yang lebih sering menguasai Anda?"; 
+        question[7] = "Bagaimana pendapat Anda tentang jadwal yang tetap?"; 
+        question[8] = "Jika Anda diberikan sebuah pekerjaan yang spesial, apa yang lebih cenderung Anda lakukan?"; 
+        question[9] = "Manakah yang lebih cenderung Anda lakukan?"; 
+        question[10] = "Manakah yang lebih Anda kuasai?";
+        question[11] = "Jika Anda dapat memilih, ingin menjadi orang seperti apakah Anda?";
+        question[12] = "Bagaimanakah cara Anda membuat keputusan?"; 
+        question[13] = "Manakah yang lebih sering orang katakan tentang diri Anda?"; 
+        question[14] = "Dalam sebuah grup, manakah yang lebih sering Anda lakukan?"; 
+        question[15] = "Bagaimanakah Anda menghabiskan waktu luang?"; 
+        question[16] = "Jika dikelilingi banyak orang, bagaimanakah perasaan Anda?";
+        question[17] = "Dalam sebuah pesta, manakah yang lebih sering Anda lakukan?";
+        question[18] = "Manakah yang lebih mewakili Anda dalam pekerjaan sehari-hari?"; 
+        question[19] = "Jika dianggap orang seperti apakah Anda lebih senang?"; 
+        question[20] = "Bagaimanakah biasanya Anda berbicara?"; 
+        question[21] = "Jika anda sedang membaca buku untuk hiburan, manakah yang lebih sering Anda lakukan?"; 
+        question[22] = "Manakah tipe bos atau atasan yang lebih Anda sukai?";
     }
 
     /**
