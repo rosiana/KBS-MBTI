@@ -12,6 +12,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import static java.io.File.separator;
 import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -55,12 +57,17 @@ public class Main
     /** read the ontology and add it as a sub-model of the given ontmodel */
     protected void loadModel() throws OWLOntologyCreationException {
         File file = new File(SOURCE_FILE);
-	Writer output = new BufferedWriter(new FileWriter(file));
+        try {
+            Writer output = new BufferedWriter(new FileWriter(file));
+        } catch (IOException ex) {
+            
+            
+        }
 		    
         // Create our ontology manager in the usual way.
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();                        
 
-        File file1 = new File("ontology/OntologyOBL.owl");
+        File file1 = new File(SOURCE_FILE);
         // Now load the local copy
         OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file1);
         System.out.println("Loaded ontology: " + ontology);	
