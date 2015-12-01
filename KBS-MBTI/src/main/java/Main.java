@@ -14,10 +14,17 @@ import static java.io.File.separator;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
 public class Main
 {
@@ -27,12 +34,16 @@ public class Main
 
     // where the ontology should be
     protected static String SOURCE_URL;
+    protected static File sourceFile;
+    protected static IRI documentIRI;
+    protected static OWLOntology ontology;
 
     // where we've stashed it on disk for the time being
     protected static String SOURCE_FILE;
 
 //    // the namespace of the ontology
     public static String NS;
+    private static OWLOntologyManager manager;
 
     /***********************************/
     /* External signature methods      */
@@ -43,11 +54,20 @@ public class Main
         SOURCE_URL = SOURCE_FILE;
         NS = SOURCE_URL + "#";
         System.out.println(SOURCE_FILE);
+        try {
+            loadModel();
+        } catch (OWLOntologyCreationException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
         new Main().run();
     }
 
     public void run() {
-        
+        OWLDataFactory factory = manager.getOWLDataFactory();
+        OWLClass clsAMethodA = factory.getOWLClass(documentIRI);
+        OWLReasoner reasoner=new Reasoner.ReasonerFactory().createReasoner(ontology);
+        System.out.println(reasoner.isConsistent());
+        System.out.println(clsAMethodA.toString());
     }
 
     /***********************************/
@@ -55,7 +75,7 @@ public class Main
     /***********************************/
 
     /** read the ontology and add it as a sub-model of the given ontmodel */
-    protected void loadModel() throws OWLOntologyCreationException {
+    protected static void loadModel() throws OWLOntologyCreationException {
         File file = new File(SOURCE_FILE);
         try {
             Writer output = new BufferedWriter(new FileWriter(file));
@@ -65,12 +85,13 @@ public class Main
         }
 		    
         // Create our ontology manager in the usual way.
-        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();                        
+        manager = OWLManager.createOWLOntologyManager();                        
 
-        File file1 = new File(SOURCE_FILE);
+        sourceFile = new File(SOURCE_FILE);
         // Now load the local copy
-        OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file1);
+        ontology = manager.loadOntologyFromOntologyDocument(sourceFile);
         System.out.println("Loaded ontology: " + ontology);	
+        documentIRI = manager.getOntologyDocumentIRI(ontology);
     }
 
 }
