@@ -1,3 +1,6 @@
+
+import org.semanticweb.HermiT.Reasoner;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,5 +11,12 @@
  * @author user
  */
 public class MBTIReasoner {
+    private Reasoner reason;
     
+    public MBTIReasoner(Reasoner reason){this.reason = reason;}
+    
+    public void runReasoner(){
+        Reasoner r = reason;
+        r.
+    }
 }
