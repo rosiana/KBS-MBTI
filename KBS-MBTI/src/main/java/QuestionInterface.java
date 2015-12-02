@@ -39,7 +39,6 @@ public class QuestionInterface extends javax.swing.JFrame {
         choice1 = new String[60];
         choice2 = new String[60];
         selectedquestion = new char[60];
-        value = new HashMap();
         
         question[0] = "Bagaimanakah cara Anda merencanakan sesuatu?"; 
         question[1] = "Menurut Anda orang seperti apakah Anda?"; 
@@ -728,33 +727,9 @@ public class QuestionInterface extends javax.swing.JFrame {
         loadPage();
     }//GEN-LAST:event_jButton3MouseClicked
 
-    private boolean checkSelected()
-    {
-        boolean b = false;
-        if (jRadioButton1.isSelected() || jRadioButton2.isSelected())
-        {
-            if (jRadioButton3.isSelected() || jRadioButton4.isSelected())
-            {
-                if (jRadioButton5.isSelected() || jRadioButton6.isSelected())
-                {
-                    if (jRadioButton7.isSelected() || jRadioButton8.isSelected())
-                    {
-                        if (jRadioButton9.isSelected() || jRadioButton10.isSelected())
-                        {
-                            if (jRadioButton9.isSelected() || jRadioButton10.isSelected())
-                            {
-                                b = true;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        return b;
-    }
+    
     
     private void loadPage() {
-        jButton3.setVisible(false);
         switch (qa)
         {
             case 0: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
@@ -776,10 +751,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[1]);
                     jRadioButton11.setText(choice1[5]);
                     jRadioButton12.setText(choice2[5]); 
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 1: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -812,10 +783,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[1]);
                     jRadioButton11.setText(choice1[11]);
                     jRadioButton12.setText(choice2[11]);
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 2: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -848,10 +815,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[1]);
                     jRadioButton11.setText(choice1[17]);
                     jRadioButton12.setText(choice2[17]);
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 3: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -884,10 +847,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[2]);
                     jRadioButton11.setText(choice1[23]);
                     jRadioButton12.setText(choice2[23]);
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 4: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -920,10 +879,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[5]);
                     jRadioButton11.setText(choice1[29]);
                     jRadioButton12.setText(choice2[29]);
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 5: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -956,10 +911,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[9]);
                     jRadioButton11.setText(choice1[35]);
                     jRadioButton12.setText(choice2[35]); 
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 6: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -992,10 +943,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[11]);
                     jRadioButton11.setText(choice1[41]);
                     jRadioButton12.setText(choice2[41]);
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 7: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -1028,10 +975,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[15]);
                     jRadioButton11.setText(choice1[47]);
                     jRadioButton12.setText(choice2[47]);
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 8: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -1064,10 +1007,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[18]);
                     jRadioButton11.setText(choice1[53]);
                     jRadioButton12.setText(choice2[53]);
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 9: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -1100,10 +1039,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[22]);
                     jRadioButton11.setText(choice1[59]);
                     jRadioButton12.setText(choice2[59]);
-                    if (checkSelected())
-                    {
-                        jButton3.setVisible(true);
-                    }
                     break;
             case 10: 
                     //tes input ke owl
@@ -1178,9 +1113,9 @@ public class QuestionInterface extends javax.swing.JFrame {
         });
     }
     
-    public void getValue(){
+    public Map getValue(){
         int i=0,e=0,n=0,s=0,t=0,f=0,j=0,p=0;
-        
+        value = new HashMap();
         for(int z = 0 ; z<selectedquestion.length;z++){
             if(selectedquestion[z] == 'I'){
                 i++;
@@ -1209,6 +1144,8 @@ public class QuestionInterface extends javax.swing.JFrame {
         value.put('F',f);
         value.put('J',j);
         value.put('P',p);
+        
+        return value;
     }
     
     Map getMap(){
