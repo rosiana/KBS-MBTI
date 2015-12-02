@@ -1023,67 +1023,6 @@ public class MainInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[1]);
                     jRadioButton11.setText(choice1[5]);
                     jRadioButton12.setText(choice2[5]);
-                    
-                    if (jRadioButton1.isSelected())
-                    {   
-                        jRadioButton2.setSelected(false);
-                        selectedquestion[0] = 'J';
-                    }
-                    if (jRadioButton2.isSelected())
-                    {   
-                        jRadioButton1.setSelected(false);
-                        selectedquestion[0] = 'P';
-                    }
-                    if (jRadioButton3.isSelected())
-                    {   
-                        jRadioButton4.setSelected(false);
-                        selectedquestion[1] = 'P';
-                    }
-                    if (jRadioButton4.isSelected())
-                    {   
-                        jRadioButton3.setSelected(false);
-                        selectedquestion[1] = 'J';
-                    }
-                    if (jRadioButton5.isSelected())
-                    {   
-                        jRadioButton6.setSelected(false);
-                        selectedquestion[2] = 'E';
-                    }
-                    if (jRadioButton6.isSelected())
-                    {   
-                        jRadioButton5.setSelected(false);
-                        selectedquestion[2] = 'I';
-                    }
-                    if (jRadioButton7.isSelected())
-                    {   
-                        jRadioButton8.setSelected(false);
-                        selectedquestion[3] = 'E';
-                    }
-                    if (jRadioButton8.isSelected())
-                    {   
-                        jRadioButton7.setSelected(false);
-                        selectedquestion[3] = 'I';
-                    }
-                    if (jRadioButton9.isSelected())
-                    {   
-                        jRadioButton10.setSelected(false);
-                        selectedquestion[4] = 'S';
-                    }
-                    if (jRadioButton10.isSelected())
-                    {   
-                        jRadioButton9.setSelected(false);
-                        selectedquestion[4] = 'N';
-                    }
-                    if (jRadioButton11.isSelected())
-                    {   
-                        jRadioButton12.setSelected(false);
-                        selectedquestion[5] = 'F';
-                    }
-                    if (jRadioButton12.isSelected())
-                    {   
-                        jRadioButton11.setSelected(false);
-                        selectedquestion[5] = 'T';
-                    }
                     break;
         }
     }
