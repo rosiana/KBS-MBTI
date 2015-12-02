@@ -204,7 +204,6 @@ public class QuestionInterface extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
         jLabel2 = new javax.swing.JLabel();
         jRadioButton3 = new javax.swing.JRadioButton();
         jRadioButton4 = new javax.swing.JRadioButton();
@@ -225,6 +224,7 @@ public class QuestionInterface extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -246,18 +246,6 @@ public class QuestionInterface extends javax.swing.JFrame {
         jRadioButton2.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jRadioButton2FocusGained(evt);
-            }
-        });
-
-        jToggleButton1.setText("Next");
-        jToggleButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jToggleButton1MouseClicked(evt);
-            }
-        });
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
             }
         });
 
@@ -362,6 +350,18 @@ public class QuestionInterface extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setText("Next");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -393,9 +393,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                             .addComponent(jRadioButton9)
                             .addComponent(jRadioButton10)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(305, 305, 305)
-                        .addComponent(jToggleButton1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(304, 304, 304)
                         .addComponent(jLabel9))
                     .addGroup(layout.createSequentialGroup()
@@ -405,7 +402,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                                 .addComponent(jButton1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButton2))
-                            .addComponent(jLabel8))))
+                            .addComponent(jLabel8)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(303, 303, 303)
+                        .addComponent(jButton3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -452,7 +452,7 @@ public class QuestionInterface extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton12)
                 .addGap(18, 18, 18)
-                .addComponent(jToggleButton1)
+                .addComponent(jButton3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -477,16 +477,6 @@ public class QuestionInterface extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
-
-    private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
-        // TODO add your handling code here:
-        qa++;
-        loadPage();
-    }//GEN-LAST:event_jToggleButton1MouseClicked
 
     private void jRadioButton10FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jRadioButton10FocusGained
         // TODO add your handling code here:
@@ -728,8 +718,43 @@ public class QuestionInterface extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        // TODO add your handling code here:
+        qa++;
+        loadPage();
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private boolean checkSelected()
+    {
+        boolean b = false;
+        if (jRadioButton1.isSelected() || jRadioButton2.isSelected())
+        {
+            if (jRadioButton3.isSelected() || jRadioButton4.isSelected())
+            {
+                if (jRadioButton5.isSelected() || jRadioButton6.isSelected())
+                {
+                    if (jRadioButton7.isSelected() || jRadioButton8.isSelected())
+                    {
+                        if (jRadioButton9.isSelected() || jRadioButton10.isSelected())
+                        {
+                            if (jRadioButton9.isSelected() || jRadioButton10.isSelected())
+                            {
+                                b = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return b;
+    }
+    
     private void loadPage() {
-        
+        jButton3.setVisible(false);
         switch (qa)
         {
             case 0: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
@@ -750,7 +775,11 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jRadioButton10.setText(choice2[4]);
                     jLabel7.setText(question[1]);
                     jRadioButton11.setText(choice1[5]);
-                    jRadioButton12.setText(choice2[5]);                 
+                    jRadioButton12.setText(choice2[5]); 
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 1: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -783,6 +812,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[1]);
                     jRadioButton11.setText(choice1[11]);
                     jRadioButton12.setText(choice2[11]);
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 2: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -815,6 +848,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[1]);
                     jRadioButton11.setText(choice1[17]);
                     jRadioButton12.setText(choice2[17]);
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 3: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -847,6 +884,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[2]);
                     jRadioButton11.setText(choice1[23]);
                     jRadioButton12.setText(choice2[23]);
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 4: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -879,6 +920,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[5]);
                     jRadioButton11.setText(choice1[29]);
                     jRadioButton12.setText(choice2[29]);
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 5: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -910,7 +955,11 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jRadioButton10.setText(choice2[34]);
                     jLabel7.setText(question[9]);
                     jRadioButton11.setText(choice1[35]);
-                    jRadioButton12.setText(choice2[35]);                    
+                    jRadioButton12.setText(choice2[35]); 
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 6: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -943,6 +992,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[11]);
                     jRadioButton11.setText(choice1[41]);
                     jRadioButton12.setText(choice2[41]);
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 7: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -975,6 +1028,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[15]);
                     jRadioButton11.setText(choice1[47]);
                     jRadioButton12.setText(choice2[47]);
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 8: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -1007,6 +1064,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[18]);
                     jRadioButton11.setText(choice1[53]);
                     jRadioButton12.setText(choice2[53]);
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 9: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jRadioButton1.setSelected(false);
@@ -1039,6 +1100,10 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel7.setText(question[22]);
                     jRadioButton11.setText(choice1[59]);
                     jRadioButton12.setText(choice2[59]);
+                    if (checkSelected())
+                    {
+                        jButton3.setVisible(true);
+                    }
                     break;
             case 10: 
                     //tes input ke owl
@@ -1054,6 +1119,7 @@ public class QuestionInterface extends javax.swing.JFrame {
                     jLabel9.setVisible(true);
                     jButton1.setVisible(true);
                     jButton2.setVisible(true);
+                    jButton3.setVisible(false);
             default: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jLabel1.setText(question[0]);
                     jRadioButton1.setText(choice1[0]);
@@ -1153,6 +1219,7 @@ public class QuestionInterface extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -1174,6 +1241,5 @@ public class QuestionInterface extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
-    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }
