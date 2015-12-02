@@ -1,0 +1,82 @@
+choice1[0]="dengan merencakannya";
+
+choice1[1]="spontan";
+choice1[2]="mudah bersosialisasi";
+choice1[3]="mudah dipahami";
+choice1[4]="pekerja keras";
+choice1[5]="sensitif";
+choice1[6]="tergesa-gesa";
+choice1[7]="banyak bicara";
+choice1[8]="sistematik";
+choice1[9]="imajinatif";
+choice1[10]="hangat";
+choice1[11]="tenang";
+choice1[12]="analitikal";
+choice1[13]="bijaksana";
+choice1[14]="berhati lembut";
+choice1[15]="setia";
+choice1[16]="kompeten";
+choice1[17]="praktis";
+
+choice1[18]="hal yang abstrak";
+choice1[19]="fakta";
+choice1[20]="hal yang meyakinkan";
+choice1[21]="pernyataan";
+choice1[22]="keuntungan";
+choice1[23]="hal yang prinsip";
+choice1[24]="hal yang praktis";
+choice1[25]="penemuan baru";
+
+choice1[26]="teori";
+
+choice1[27]="orang yang imajinatif";
+choice1[28]="orang yang cerdas";
+
+choice1[29]="spontan";
+
+choice1[30]="hati";
+
+choice1[31]="merasa senang";
+
+choice1[32]="merencanakan dengan baik sebelum memulai";
+
+choice1[33]="mengikuti alur";
+choice1[34]="memerintah";
+choice1[35]="memiliki sedikit teman yang dekat";
+choice1[36]="membangun";
+choice1[37]="membuat rencana";
+choice1[38]="mendukung metode yang bagus";
+choice1[39]="menghasilkan";
+
+choice1[40]="berbicara dengan banyak orang";
+
+choice1[41]="bijaksana";
+
+choice1[42]="berdasarkan fakta";
+
+choice1[43]="terbuka";
+
+choice1[44]="memperkenalkan diri";
+choice1[45]="sulit mengobrol";
+choice1[46]="berbicara dengan orang yang dikenal";
+
+choice1[47]="menyendiri";
+
+choice1[48]="merasa termotivasi";
+
+choice1[49]="mudah bosan ";
+choice1[50]="banyak bicara";
+
+choice1[51]="menikmati alur";
+choice1[52]="bertindak seperti cara orang lain";
+choice1[53]="memikirkan apa yang akan dilakukan";
+choice1[54]="bekerja sesuai mood";
+
+choice1[55]="logis";
+choice1[56]="kompeten";
+
+choice1[57]="teman dekat";
+
+choice1[58]="menikmati kejanggalan";
+
+choice1[59]="baik meskipun tidak konsisten";

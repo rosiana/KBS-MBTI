@@ -1,0 +1,692 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#Personality"/>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENFJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENFJ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENFP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENFP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENTJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENTJ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENTP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENTP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESFJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESFJ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESFP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESFP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESTJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESTJ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESTP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESTP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#EorI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#EorI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INFJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INFJ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INFP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INFP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INTJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INTJ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INTP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INTP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISFJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISFJ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISFP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISFP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISTJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISTJ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISTP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISTP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#hasPersonality"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#JorP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#JorP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#MBTI"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#NorS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#NorS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#Personality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#Personality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#TorF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#TorF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#E">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#EorI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#TorF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#EorI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#J">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#JorP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#NorS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#P">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#JorP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#S">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#NorS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#T">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#TorF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENFJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENFP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENTJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ENTP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESFJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESFP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESTJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ESTP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INFJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INFP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INTJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#INTP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISFJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISFP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISTJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2015/11/untitled-ontology-18#ISTP"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

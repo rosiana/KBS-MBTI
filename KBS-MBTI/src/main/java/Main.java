@@ -83,7 +83,4 @@ public class Main{
         System.out.println("Loaded ontology: " + ontology);	
         documentIRI = manager.getOntologyDocumentIRI(ontology);
     }
-    
-    
-
 }
