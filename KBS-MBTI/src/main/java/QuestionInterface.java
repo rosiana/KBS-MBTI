@@ -30,6 +30,11 @@ public class QuestionInterface extends javax.swing.JFrame {
     public QuestionInterface() {
         initComponents();
         
+        jLabel8.setVisible(false);
+        jLabel9.setVisible(false);
+        jButton1.setVisible(false);
+        jButton2.setVisible(false);
+        
         question = new String[23];
         choice1 = new String[60];
         choice2 = new String[60];
@@ -215,6 +220,10 @@ public class QuestionInterface extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jRadioButton11 = new javax.swing.JRadioButton();
         jRadioButton12 = new javax.swing.JRadioButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -333,6 +342,25 @@ public class QuestionInterface extends javax.swing.JFrame {
             }
         });
 
+        jLabel8.setText("Tipe kepribadian Anda adalah:");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel9.setText("ENTP");
+
+        jButton1.setText("Ulangi");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("Selesai");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -342,9 +370,6 @@ public class QuestionInterface extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(338, 338, 338)
-                        .addComponent(jToggleButton1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(48, 48, 48)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -365,8 +390,22 @@ public class QuestionInterface extends javax.swing.JFrame {
                             .addComponent(jRadioButton7)
                             .addComponent(jRadioButton8)
                             .addComponent(jRadioButton9)
-                            .addComponent(jRadioButton10))))
-                .addContainerGap(103, Short.MAX_VALUE))
+                            .addComponent(jRadioButton10)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(305, 305, 305)
+                        .addComponent(jToggleButton1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(304, 304, 304)
+                        .addComponent(jLabel9))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(262, 262, 262)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton2))
+                            .addComponent(jLabel8))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -407,13 +446,21 @@ public class QuestionInterface extends javax.swing.JFrame {
                 .addComponent(jRadioButton10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 3, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton12)
-                .addGap(13, 13, 13)
+                .addGap(18, 18, 18)
                 .addComponent(jToggleButton1)
-                .addGap(25, 25, 25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         jRadioButton3.getAccessibleContext().setAccessibleName("jRadioButton3");
@@ -671,6 +718,14 @@ public class QuestionInterface extends javax.swing.JFrame {
             default: selectedquestion[5] = 'T';
         }
     }//GEN-LAST:event_jRadioButton12FocusGained
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void loadPage() {
         
@@ -990,7 +1045,14 @@ public class QuestionInterface extends javax.swing.JFrame {
                     {
                         System.out.println(" " + i + "-" + selectedquestion[i]);
                     }
-                    MainInterface result = new MainInterface();
+                    getValue();
+                    Classifier classifier = new Classifier();
+                    String result = classifier.getResult(value);
+                    jLabel9.setText(result);
+                    jLabel8.setVisible(true);
+                    jLabel9.setVisible(true);
+                    jButton1.setVisible(true);
+                    jButton2.setVisible(true);
             default: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jLabel1.setText(question[0]);
                     jRadioButton1.setText(choice1[0]);
@@ -1091,6 +1153,8 @@ public class QuestionInterface extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -1098,6 +1162,8 @@ public class QuestionInterface extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton10;
     private javax.swing.JRadioButton jRadioButton11;
