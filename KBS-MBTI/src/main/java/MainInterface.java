@@ -1,3 +1,7 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -1120,6 +1124,42 @@ public class MainInterface extends javax.swing.JFrame {
                 new MainInterface().setVisible(true);
             }
         });
+    }
+    
+    public Map getValue(){
+        Map value = new HashMap();
+        int i=0,e=0,n=0,s=0,t=0,f=0,j=0,p=0;
+        
+        for(int z = 0 ; z<selectedquestion.length;z++){
+            if(selectedquestion[z] == 'I'){
+                i++;
+            } else if(selectedquestion[z] == 'E'){
+                e++;
+            }else if(selectedquestion[z] == 'N'){
+                n++;
+            }else if(selectedquestion[z] == 'S'){
+                s++;
+            }else if(selectedquestion[z] == 'T'){
+                t++;
+            }else if(selectedquestion[z] == 'F'){
+                f++;
+            }else if(selectedquestion[z] == 'J'){
+                j++;
+            }else if(selectedquestion[z] == 'P'){
+                p++;
+            }
+        }
+        
+        value.put('I',i);
+        value.put('E',e);
+        value.put('N',n);
+        value.put('S',s);
+        value.put('T',t);
+        value.put('F',f);
+        value.put('J',j);
+        value.put('P',p);
+        
+        return value;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
