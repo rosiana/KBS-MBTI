@@ -39,7 +39,6 @@ public class QuestionInterface extends javax.swing.JFrame {
         choice1 = new String[60];
         choice2 = new String[60];
         selectedquestion = new char[60];
-        value = new HashMap();
         
         question[0] = "Bagaimanakah cara Anda merencanakan sesuatu?"; 
         question[1] = "Menurut Anda orang seperti apakah Anda?"; 
@@ -1112,9 +1111,9 @@ public class QuestionInterface extends javax.swing.JFrame {
         });
     }
     
-    public void getValue(){
+    public Map getValue(){
         int i=0,e=0,n=0,s=0,t=0,f=0,j=0,p=0;
-        
+        value = new HashMap();
         for(int z = 0 ; z<selectedquestion.length;z++){
             if(selectedquestion[z] == 'I'){
                 i++;
@@ -1143,6 +1142,8 @@ public class QuestionInterface extends javax.swing.JFrame {
         value.put('F',f);
         value.put('J',j);
         value.put('P',p);
+        
+        return value;
     }
     
     Map getMap(){
