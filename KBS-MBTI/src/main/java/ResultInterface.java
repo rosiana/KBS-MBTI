@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.util.Map;
 
 /**
  *
@@ -18,7 +19,7 @@ public class ResultInterface extends javax.swing.JFrame {
      */
     public ResultInterface() {
         initComponents();
-        
+        setValue();
     }
     
     /**
@@ -43,6 +44,11 @@ public class ResultInterface extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel2.setText("ENTP");
+        jLabel2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jLabel2FocusGained(evt);
+            }
+        });
 
         jToggleButton1.setText("Ya");
         jToggleButton1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -120,7 +126,17 @@ public class ResultInterface extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jToggleButton2MouseClicked
 
-    
+    private void jLabel2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jLabel2FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel2FocusGained
+
+    private void setValue(){
+        MainInterface main = new MainInterface();
+        Map valMap = main.getMap();
+        Classifier classifier = new Classifier();
+        String result = classifier.getResult(valMap);
+        jLabel2.setText(result);
+    }
     /**
      * @param args the command line arguments
      */

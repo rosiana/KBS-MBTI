@@ -20,6 +20,8 @@ public class MainInterface extends javax.swing.JFrame {
     public String[] choice2;
     public char[] selectedquestion;
     
+    public Map value;
+    
     public int qa;
 
     /**
@@ -1047,7 +1049,7 @@ public class MainInterface extends javax.swing.JFrame {
     }
     
     public Map getValue(){
-        Map value = new HashMap();
+        value = new HashMap();
         int i=0,e=0,n=0,s=0,t=0,f=0,j=0,p=0;
         
         for(int z = 0 ; z<selectedquestion.length;z++){
@@ -1079,6 +1081,10 @@ public class MainInterface extends javax.swing.JFrame {
         value.put('J',j);
         value.put('P',p);
         
+        return value;
+    }
+    
+    Map getMap(){
         return value;
     }
 
