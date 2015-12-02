@@ -48,13 +48,13 @@ public class DLQueryPrinter {
 
                 // Ask for the subclasses, superclasses etc. of the specified class expression.  Print out the results.
                 Set<OWLClass> superClasses = dlQueryEngine.getSuperClasses(classExpression, true);
-                printEntities("SuperClasses", superClasses, sb);
+                //printEntities("SuperClasses", superClasses, sb);
                 Set<OWLClass> equivalentClasses = dlQueryEngine.getEquivalentClasses(classExpression);
                 printEntities("EquivalentClasses", equivalentClasses, sb);
                 Set<OWLClass> subClasses = dlQueryEngine.getSubClasses(classExpression, true);
-                printEntities("SubClasses", subClasses, sb);
+                //printEntities("SubClasses", subClasses, sb);
                 Set<OWLNamedIndividual> individuals = dlQueryEngine.getInstances(classExpression, true);
-                printEntities("Instances", individuals, sb);
+                //printEntities("Instances", individuals, sb);
 
                 System.out.println(sb.toString());
             }

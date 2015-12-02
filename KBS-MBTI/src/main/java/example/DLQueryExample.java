@@ -33,7 +33,7 @@ public class DLQueryExample {
         try {
             // Load an example ontology.  In this case, we'll just load the pizza ontology.
             OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-            OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new File(System.getProperty("user.dir").concat(separator).concat("src").concat(separator).concat("owl").concat(separator).concat("MBTI.owl")));
+            OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new File(System.getProperty("user.dir").concat(separator).concat("src").concat(separator).concat("owl").concat(separator).concat("MBTIFinal.owl")));
             System.out.println("Loaded ontology: " + ontology.getOntologyID());
             // We need a reasoner to do our query answering
             OWLReasoner reasoner = createReasoner(ontology);
