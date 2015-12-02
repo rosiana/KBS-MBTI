@@ -247,6 +247,9 @@
       <AccessibilityProperties>
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="jRadioButton10"/>
       </AccessibilityProperties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jRadioButton9FocusGained"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRadioButton10">
       <Properties>
@@ -271,6 +274,9 @@
       <AccessibilityProperties>
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="jRadioButton11"/>
       </AccessibilityProperties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jRadioButton11FocusGained"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRadioButton12">
       <Properties>
@@ -279,6 +285,9 @@
       <AccessibilityProperties>
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="jRadioButton12"/>
       </AccessibilityProperties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jRadioButton12FocusGained"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
