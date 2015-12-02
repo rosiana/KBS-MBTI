@@ -1,0 +1,82 @@
+choice2[0]="tanpa rencana";
+
+choice2[1]="terorganisir";
+choice2[2]="penyendiri";
+choice2[3]="sulit dipahami";
+choice2[4]="konseptor";
+choice2[5]="logis";
+choice2[6]="cepat merespon";
+choice2[7]="banyak terdiam";
+choice2[8]="santai";
+choice2[9]="realistis";
+choice2[10]="objektif";
+choice2[11]="penasaran";
+choice2[12]="perasa";
+choice2[13]="peduli";
+choice2[14]="keras kepala";
+choice2[15]="rajin";
+choice2[16]="murah hati";
+choice2[17]="inovatif";
+
+choice2[18]="hal yang konkrit";
+choice2[19]="ide";
+choice2[20]="hal yang menyentuh";
+choice2[21]="konsep";
+choice2[22]="berkah";
+choice2[23]="ilmiah";
+choice2[24]="perasaan";
+choice2[25]="hal yang terkenal";
+
+choice2[26]="aplikasi";
+
+choice2[27]="orang yang realistik";
+choice2[28]="pekerja keras";
+
+choice2[29]="terorganisir";
+
+choice2[30]="pikiran";
+
+choice2[31]="merasa terbatasi";
+
+choice2[32]="melakukan apapun asalkan dapat bertahan";
+
+choice2[33]="mengikuti jadwal";
+choice2[34]="bergaul";
+choice2[35]="memiliki banyak teman yang dekat";
+choice2[36]="menciptakan";
+choice2[37]="menikmati waktu";
+choice2[38]="menganalisis permasalahan";
+choice2[39]="mendesain";
+
+choice2[40]="berbicara secara pribadi";
+
+choice2[41]="menawan";
+
+choice2[42]="berdasarkan perasaan orang";
+
+choice2[43]="tertutup";
+
+choice2[44]="diperkenalkan";
+choice2[45]="mudah mengobrol";
+choice2[46]="bergabung dalam pembicaraan";
+
+choice2[47]="bersama orang lain";
+
+choice2[48]="merasa biasa";
+
+choice2[49]="selalu senang";
+choice2[50]="membiarkan orang lain berbicara";
+
+choice2[51]="merencanakan segala sesuatu";
+choice2[52]="bertindak dengan cara sendiri";
+choice2[53]="memulai dengan membagi-bagi pekerjaan";
+choice2[54]="mengikuti jadwal";
+
+choice2[55]="konsisten";
+choice2[56]="humoris";
+
+choice2[57]="semua orang";
+
+choice2[58]="berpikir seperti alur berpikir penulis";
+
+choice2[59]="berlidah tajam tapi logis";
