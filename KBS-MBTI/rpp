@@ -14,8 +14,7 @@ aPersonWho(
 	conceptor N,
 	sensitive F,
 	logical T,
-	softhearted F,
-	bold T,
+
 	hasty P,
 	fastResponse J,
 	talkative E,
@@ -28,6 +27,8 @@ aPersonWho(
 	objective T,
 	calm I,
 	curious E,
+
+
 	analytical T,
 	feeler F,
 	wise T,
@@ -47,8 +48,6 @@ prefers(
 	exactThings S,
 	facts S,
 	ideas N,
-	theory N,
-	certainty S,
 	convincingThings T,
 	touchingThings F,
 	statements S,
@@ -57,6 +56,8 @@ prefers(
 	blessings F,
 	principles N,
 	sciences S,
+
+
 	practicalThings T,
 	feelings F,
 	newlyInventedThings N,
