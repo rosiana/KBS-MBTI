@@ -15,8 +15,8 @@ public class MBTIReasoner {
     
     public MBTIReasoner(Reasoner reason){this.reason = reason;}
     
-    public void runReasoner(){
+    public void runReasoner(String expression){
         Reasoner r = reason;
-        r.
+        System.out.println(r.getPrefixes().toString());
     }
 }
