@@ -33,7 +33,8 @@ public class DLQueryPrinter {
         dlQueryEngine = new DLQueryEngine(reasoner, shortFormProvider);
     }
 
-    public void askQuery(String classExpression) {
+    public Set<OWLClass> askQuery(String classExpression) {
+        Set<OWLClass> equivalentClasses = null;
         if(classExpression.isEmpty()) {
             System.out.println("No class expression specified");
         }
@@ -49,7 +50,7 @@ public class DLQueryPrinter {
                 // Ask for the subclasses, superclasses etc. of the specified class expression.  Print out the results.
                 Set<OWLClass> superClasses = dlQueryEngine.getSuperClasses(classExpression, true);
                 //printEntities("SuperClasses", superClasses, sb);
-                Set<OWLClass> equivalentClasses = dlQueryEngine.getEquivalentClasses(classExpression);
+                equivalentClasses = dlQueryEngine.getEquivalentClasses(classExpression);
                 printEntities("EquivalentClasses", equivalentClasses, sb);
                 Set<OWLClass> subClasses = dlQueryEngine.getSubClasses(classExpression, true);
                 //printEntities("SubClasses", subClasses, sb);
@@ -62,7 +63,7 @@ public class DLQueryPrinter {
                 System.out.println(e.getMessage());
             }
         }
-
+        return equivalentClasses;
     }
 
     private void printEntities(String name, Set<? extends OWLEntity> entities, StringBuilder sb) {
