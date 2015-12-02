@@ -499,66 +499,6 @@
         <ObjectProperty IRI="#personalityClassification"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#alwaysHappy"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#curious"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#easyToTalk"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#easyToUnderstood"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#everyone"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#feelingMotivated"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#haveManyFriends"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#introducing"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#joinTheConversation"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#open"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#sociable"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#talkative"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#talksALot"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#talksToManyPeople"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#E"/>
-        <Class IRI="#withPeople"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#ENFJ"/>
         <ObjectIntersectionOf>
             <Class IRI="#MBTI"/>
@@ -566,32 +506,14 @@
                 <ObjectProperty IRI="#eiClassification"/>
                 <Class IRI="#E"/>
             </ObjectMinCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENFJ"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#MBTI"/>
             <ObjectMinCardinality cardinality="8">
                 <ObjectProperty IRI="#ftClassification"/>
                 <Class IRI="#F"/>
             </ObjectMinCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENFJ"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#MBTI"/>
             <ObjectMinCardinality cardinality="7">
                 <ObjectProperty IRI="#jpClassification"/>
                 <Class IRI="#J"/>
             </ObjectMinCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENFJ"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#MBTI"/>
             <ObjectMinCardinality cardinality="9">
                 <ObjectProperty IRI="#nsClassification"/>
                 <Class IRI="#N"/>
@@ -600,843 +522,333 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ENFP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#E"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENFP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#F"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENFP"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#P"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENFP"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#N"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#E"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#F"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#P"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#N"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ENTJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#E"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENTJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#T"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENTJ"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#J"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENTJ"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#N"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#E"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#J"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#T"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#N"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ENTP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#E"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENTP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#T"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENTP"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#P"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ENTP"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#N"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#E"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#P"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#T"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#N"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ESFJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#E"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESFJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#F"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESFJ"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#J"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESFJ"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#S"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#E"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#F"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#J"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#S"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ESFP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#E"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESFP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#F"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESFP"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#P"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESFP"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#S"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#E"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#F"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#P"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#S"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ESTJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#E"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESTJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#T"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESTJ"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#J"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESTJ"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#S"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#E"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#J"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#T"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#S"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ESTP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#E"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESTP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#T"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESTP"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#P"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ESTP"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#S"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#blessings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#caring"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#considersPeoplesFeeling"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#devoted"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#feeler"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#feelings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#generous"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#heart"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#humorous"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#kindButInconsistent"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#logical1"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#sensitive"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#softhearted"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#touchingThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F"/>
-        <Class IRI="#warm"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#alone"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#calm"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#closeFriends"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#easilyBored"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#feelingUsual"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#hardToTalk"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#hardToUnderstood"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#haveFewFriends"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#introduced"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#letPeopleTalks"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#loner"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#quiet"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#reserved"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#talkWithKnownPerson"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#I"/>
-        <Class IRI="#talksPrivately"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#E"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#P"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#T"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#S"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#INFJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#I"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INFJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#N"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INFJ"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#J"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INFJ"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#N"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#I"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#F"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#J"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#N"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#INFP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#I"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INFP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#F"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INFP"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#P"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INFP"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#N"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#I"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#F"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#P"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#N"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#INTJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#I"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INTJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#T"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INTJ"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#J"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INTJ"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#N"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#I"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#J"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#T"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#N"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#INTP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#I"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INTP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#T"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INTP"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#P"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#INTP"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#N"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#I"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#P"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#T"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#N"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ISFJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#I"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISFJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#F"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISFJ"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#J"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISFJ"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#S"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#I"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#F"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#J"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#S"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ISFP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#I"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISFP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#F"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISFP"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#P"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISFP"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#S"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#I"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#F"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#P"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#S"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ISTJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#I"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISTJ"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#T"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISTJ"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#J"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISTJ"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#S"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#I"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#J"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#T"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#S"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ISTP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#eiClassification"/>
-            <Class IRI="#I"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISTP"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#ftClassification"/>
-            <Class IRI="#T"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISTP"/>
-        <ObjectMinCardinality cardinality="7">
-            <ObjectProperty IRI="#jpClassification"/>
-            <Class IRI="#P"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ISTP"/>
-        <ObjectMinCardinality cardinality="9">
-            <ObjectProperty IRI="#nsClassification"/>
-            <Class IRI="#S"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#command"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#fastResponse"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#feelingExcited"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#followTheSchedule"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#followsSchedules"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#likesToPlan"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#makePlans"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#organized"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#organized1"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#organizing"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#plansEverything"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#startsByDividingWorks"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#J"/>
-        <Class IRI="#systematic"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#abstractThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#analyzesProblems"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#applications"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#charming"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#conceptor"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#concepts"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#createThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#designes"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#doesWithOwnWay"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#enjoysPeculiarities"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#ideas"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#imaginative"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#imaginativePeople"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#innovative"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#newlyInventedThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#principles"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#N"/>
-        <Class IRI="#smartPeople"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#enjoyTime"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#enjoysTheFlow"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#feelingRestricted"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#followTheFlow"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#hasty"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#laidBack"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#mingle"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#spontaneous"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#spontaneous1"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#surviving"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#thinksWhatToDo"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#withoutPlan"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#P"/>
-        <Class IRI="#worksAccordingToMood"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#buildThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#doesAsHowPeopleDo"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#exactThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#facts"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#hardworker"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#practical"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#produces"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#realistic"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#realisticPeople"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#sciences"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#statements"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#supportGoodMethods"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#theories"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#thinksAsAuthorThought"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#wellKnownThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#wise1"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#S"/>
-        <Class IRI="#workharderPeople"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#analytical"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#competent"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#competent1"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#considersFacts"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#consistent"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#convincingThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#diligent"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#logical"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#mind"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#objective"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#practicalThings"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#profits"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#sharptonguedButLogical"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#strongheaded"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#T"/>
-        <Class IRI="#wise"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#MBTI"/>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#eiClassification"/>
+                <Class IRI="#I"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#P"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="7">
+                <ObjectProperty IRI="#jpClassification"/>
+                <Class IRI="#T"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="9">
+                <ObjectProperty IRI="#nsClassification"/>
+                <Class IRI="#S"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Dichotomy"/>
@@ -1568,7 +980,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#abstractThings"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#abstractThings"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#alone"/>
+        <Class IRI="#I"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#alone"/>
@@ -1576,7 +996,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#alwaysHappy"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#alwaysHappy"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#analytical"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#analytical"/>
@@ -1584,7 +1012,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#analyzesProblems"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#analyzesProblems"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#applications"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#applications"/>
@@ -1592,7 +1028,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#blessings"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blessings"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#buildThings"/>
+        <Class IRI="#S"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#buildThings"/>
@@ -1600,7 +1044,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#calm"/>
+        <Class IRI="#I"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#calm"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#caring"/>
+        <Class IRI="#F"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#caring"/>
@@ -1608,7 +1060,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#charming"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#charming"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#closeFriends"/>
+        <Class IRI="#I"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#closeFriends"/>
@@ -1616,7 +1076,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#command"/>
+        <Class IRI="#J"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#command"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#competent"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#competent"/>
@@ -1624,7 +1092,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#competent1"/>
+        <Class IRI="#T"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#competent1"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conceptor"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conceptor"/>
@@ -1632,7 +1108,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#concepts"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#concepts"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#considersFacts"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#considersFacts"/>
@@ -1640,7 +1124,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#considersPeoplesFeeling"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#considersPeoplesFeeling"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#consistent"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#consistent"/>
@@ -1648,7 +1140,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#convincingThings"/>
+        <Class IRI="#T"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#convincingThings"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#createThings"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#createThings"/>
@@ -1656,7 +1156,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#curious"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#curious"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#designes"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#designes"/>
@@ -1664,7 +1172,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#devoted"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#devoted"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diligent"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#diligent"/>
@@ -1672,7 +1188,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#doesAsHowPeopleDo"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#doesAsHowPeopleDo"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#doesWithOwnWay"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#doesWithOwnWay"/>
@@ -1680,7 +1204,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#easilyBored"/>
+        <Class IRI="#I"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#easilyBored"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#easyToTalk"/>
+        <Class IRI="#E"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#easyToTalk"/>
@@ -1688,7 +1220,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#easyToUnderstood"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#easyToUnderstood"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#enjoyTime"/>
+        <Class IRI="#P"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#enjoyTime"/>
@@ -1696,7 +1236,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#enjoysPeculiarities"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#enjoysPeculiarities"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#enjoysTheFlow"/>
+        <Class IRI="#P"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#enjoysTheFlow"/>
@@ -1704,7 +1252,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#everyone"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#everyone"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exactThings"/>
+        <Class IRI="#S"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#exactThings"/>
@@ -1712,7 +1268,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#facts"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#facts"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fastResponse"/>
+        <Class IRI="#J"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#fastResponse"/>
@@ -1720,7 +1284,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#feeler"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#feeler"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#feelingExcited"/>
+        <Class IRI="#J"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#feelingExcited"/>
@@ -1728,7 +1300,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#feelingMotivated"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#feelingMotivated"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#feelingRestricted"/>
+        <Class IRI="#P"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#feelingRestricted"/>
@@ -1736,7 +1316,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#feelingUsual"/>
+        <Class IRI="#I"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#feelingUsual"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#feelings"/>
+        <Class IRI="#F"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#feelings"/>
@@ -1744,7 +1332,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#followTheFlow"/>
+        <Class IRI="#P"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#followTheFlow"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#followTheSchedule"/>
+        <Class IRI="#J"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#followTheSchedule"/>
@@ -1752,7 +1348,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#followsSchedules"/>
+        <Class IRI="#J"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#followsSchedules"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#generous"/>
+        <Class IRI="#F"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#generous"/>
@@ -1760,7 +1364,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#hardToTalk"/>
+        <Class IRI="#I"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hardToTalk"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hardToUnderstood"/>
+        <Class IRI="#I"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#hardToUnderstood"/>
@@ -1768,7 +1380,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#hardworker"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hardworker"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hasty"/>
+        <Class IRI="#P"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#hasty"/>
@@ -1776,7 +1396,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#haveFewFriends"/>
+        <Class IRI="#I"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#haveFewFriends"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#haveManyFriends"/>
+        <Class IRI="#E"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#haveManyFriends"/>
@@ -1784,7 +1412,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#heart"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#heart"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#humorous"/>
+        <Class IRI="#F"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#humorous"/>
@@ -1792,7 +1428,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ideas"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ideas"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#imaginative"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#imaginative"/>
@@ -1800,7 +1444,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#imaginativePeople"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#imaginativePeople"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#innovative"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#innovative"/>
@@ -1808,7 +1460,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#introduced"/>
+        <Class IRI="#I"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#introduced"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#introducing"/>
+        <Class IRI="#E"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#introducing"/>
@@ -1816,7 +1476,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#joinTheConversation"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#joinTheConversation"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kindButInconsistent"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#kindButInconsistent"/>
@@ -1824,7 +1492,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#laidBack"/>
+        <Class IRI="#P"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laidBack"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#letPeopleTalks"/>
+        <Class IRI="#I"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#letPeopleTalks"/>
@@ -1832,7 +1508,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#likesToPlan"/>
+        <Class IRI="#J"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#likesToPlan"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#logical"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#logical"/>
@@ -1840,7 +1524,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#logical1"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#logical1"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loner"/>
+        <Class IRI="#I"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#loner"/>
@@ -1848,7 +1540,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#makePlans"/>
+        <Class IRI="#J"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#makePlans"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mind"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#mind"/>
@@ -1856,7 +1556,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#mingle"/>
+        <Class IRI="#P"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mingle"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#newlyInventedThings"/>
+        <Class IRI="#N"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#newlyInventedThings"/>
@@ -1864,11 +1572,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#objective"/>
+        <Class IRI="#T"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#objective"/>
         <Class IRI="#Trait"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#open"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#open"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#organized"/>
+        <Class IRI="#J"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#organized"/>
@@ -1880,7 +1600,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#organizing"/>
+        <Class IRI="#J"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#organizing"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plansEverything"/>
+        <Class IRI="#J"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#plansEverything"/>
@@ -1888,7 +1616,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#practical"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#practical"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#practicalThings"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#practicalThings"/>
@@ -1896,7 +1632,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#principles"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#principles"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#produces"/>
+        <Class IRI="#S"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#produces"/>
@@ -1904,7 +1648,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#profits"/>
+        <Class IRI="#T"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#profits"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quiet"/>
+        <Class IRI="#I"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#quiet"/>
@@ -1912,7 +1664,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#realistic"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#realistic"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#realisticPeople"/>
+        <Class IRI="#S"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#realisticPeople"/>
@@ -1920,7 +1680,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#reserved"/>
+        <Class IRI="#I"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reserved"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sciences"/>
+        <Class IRI="#S"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sciences"/>
@@ -1928,7 +1696,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sensitive"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sensitive"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sharptonguedButLogical"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sharptonguedButLogical"/>
@@ -1936,7 +1712,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#smartPeople"/>
+        <Class IRI="#N"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#smartPeople"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sociable"/>
+        <Class IRI="#E"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sociable"/>
@@ -1944,7 +1728,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#softhearted"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#softhearted"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spontaneous"/>
+        <Class IRI="#P"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#spontaneous"/>
@@ -1956,7 +1748,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#startsByDividingWorks"/>
+        <Class IRI="#J"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#startsByDividingWorks"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#statements"/>
+        <Class IRI="#S"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#statements"/>
@@ -1964,7 +1764,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#strongheaded"/>
+        <Class IRI="#T"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#strongheaded"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#supportGoodMethods"/>
+        <Class IRI="#S"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#supportGoodMethods"/>
@@ -1972,7 +1780,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#surviving"/>
+        <Class IRI="#P"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#surviving"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#systematic"/>
+        <Class IRI="#J"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#systematic"/>
@@ -1980,7 +1796,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#talkWithKnownPerson"/>
+        <Class IRI="#I"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#talkWithKnownPerson"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#talkative"/>
+        <Class IRI="#E"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#talkative"/>
@@ -1988,7 +1812,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#talksALot"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#talksALot"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#talksPrivately"/>
+        <Class IRI="#I"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#talksPrivately"/>
@@ -1996,7 +1828,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#talksToManyPeople"/>
+        <Class IRI="#E"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#talksToManyPeople"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#theories"/>
+        <Class IRI="#S"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#theories"/>
@@ -2004,7 +1844,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#thinksAsAuthorThought"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#thinksAsAuthorThought"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#thinksWhatToDo"/>
+        <Class IRI="#P"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#thinksWhatToDo"/>
@@ -2012,7 +1860,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#touchingThings"/>
+        <Class IRI="#F"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#touchingThings"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#warm"/>
+        <Class IRI="#F"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#warm"/>
@@ -2020,7 +1876,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#wellKnownThings"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wellKnownThings"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wise"/>
+        <Class IRI="#T"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#wise"/>
@@ -2028,7 +1892,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#wise1"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wise1"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#withPeople"/>
+        <Class IRI="#E"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#withPeople"/>
@@ -2036,11 +1908,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#withoutPlan"/>
+        <Class IRI="#P"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#withoutPlan"/>
         <Class IRI="#Trait"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#workharderPeople"/>
+        <Class IRI="#S"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#workharderPeople"/>
         <Class IRI="#Trait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#worksAccordingToMood"/>
+        <Class IRI="#P"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#worksAccordingToMood"/>
