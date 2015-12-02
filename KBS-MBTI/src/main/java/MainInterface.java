@@ -298,6 +298,11 @@ public class MainInterface extends javax.swing.JFrame {
         jLabel6.setText("jLabel1");
 
         jRadioButton9.setText("jRadioButton2");
+        jRadioButton9.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jRadioButton9FocusGained(evt);
+            }
+        });
 
         jRadioButton10.setText("jRadioButton1");
         jRadioButton10.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -309,8 +314,18 @@ public class MainInterface extends javax.swing.JFrame {
         jLabel7.setText("jLabel1");
 
         jRadioButton11.setText("jRadioButton1");
+        jRadioButton11.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jRadioButton11FocusGained(evt);
+            }
+        });
 
         jRadioButton12.setText("jRadioButton2");
+        jRadioButton12.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jRadioButton12FocusGained(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -593,6 +608,63 @@ public class MainInterface extends javax.swing.JFrame {
             default: selectedquestion[0] = 'J';
         }
     }//GEN-LAST:event_jRadioButton1FocusGained
+
+    private void jRadioButton9FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jRadioButton9FocusGained
+        // TODO add your handling code here:
+        jRadioButton10.setSelected(false);
+        switch (qa)
+        {
+            case 0: selectedquestion[4] = 'S';
+            case 1: selectedquestion[10] = 'F';
+            case 2: selectedquestion[16] = 'T';
+            case 3: selectedquestion[22] = 'T';
+            case 4: selectedquestion[28] = 'N';
+            case 5: selectedquestion[34] = 'J';
+            case 6: selectedquestion[40] = 'E';
+            case 7: selectedquestion[46] = 'I';
+            case 8: selectedquestion[52] = 'S';
+            case 9: selectedquestion[58] = 'N';
+            default: selectedquestion[4] = 'S';
+        }
+    }//GEN-LAST:event_jRadioButton9FocusGained
+
+    private void jRadioButton11FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jRadioButton11FocusGained
+        // TODO add your handling code here:
+        jRadioButton12.setSelected(false);
+        switch (qa)
+        {
+            case 0: selectedquestion[5] = 'F';
+            case 1: selectedquestion[11] = 'F';
+            case 2: selectedquestion[17] = 'S';
+            case 3: selectedquestion[23] = 'N';
+            case 4: selectedquestion[29] = 'P';
+            case 5: selectedquestion[35] = 'I';
+            case 6: selectedquestion[41] = 'S';
+            case 7: selectedquestion[47] = 'I';
+            case 8: selectedquestion[53] = 'P';
+            case 9: selectedquestion[59] = 'F';
+            default: selectedquestion[5] = 'F';
+        }
+    }//GEN-LAST:event_jRadioButton11FocusGained
+
+    private void jRadioButton12FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jRadioButton12FocusGained
+        // TODO add your handling code here:
+        jRadioButton11.setSelected(false);
+        switch (qa)
+        {
+            case 0: selectedquestion[5] = 'T';
+            case 1: selectedquestion[11] = 'T';
+            case 2: selectedquestion[17] = 'N';
+            case 3: selectedquestion[23] = 'S';
+            case 4: selectedquestion[29] = 'J';
+            case 5: selectedquestion[35] = 'E';
+            case 6: selectedquestion[41] = 'N';
+            case 7: selectedquestion[47] = 'E';
+            case 8: selectedquestion[53] = 'J';
+            case 9: selectedquestion[59] = 'T';
+            default: selectedquestion[5] = 'T';
+        }
+    }//GEN-LAST:event_jRadioButton12FocusGained
 
     private void loadPage() {
         
@@ -906,7 +978,13 @@ public class MainInterface extends javax.swing.JFrame {
                     jRadioButton11.setText(choice1[59]);
                     jRadioButton12.setText(choice2[59]);
                     break;
-            case 10: jLabel1.setVisible(false);
+            case 10: 
+                    //tes input ke owl
+                    for (int i = 0; i < 60; i++)
+                    {
+                        System.out.println(" " + i + "-" + selectedquestion[i]);
+                    }
+                    jLabel1.setVisible(false);
                     jLabel2.setVisible(false);
                     jLabel3.setVisible(false);
                     jLabel4.setVisible(false);
@@ -948,7 +1026,6 @@ public class MainInterface extends javax.swing.JFrame {
                     
                     if (jRadioButton1.isSelected())
                     {   
-                        System.out.println("coba");
                         jRadioButton2.setSelected(false);
                         selectedquestion[0] = 'J';
                     }
