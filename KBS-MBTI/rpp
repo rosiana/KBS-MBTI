@@ -81,6 +81,11 @@ wayOfWorking(
 	organized J
 )
 
+
+
+
+
+
 dominatedBy(
 	heart F,
 	mind T
@@ -103,6 +108,11 @@ prefersTo(
 	mingle P,
 	haveFewFriends I,
 	haveManyFriends E,
+
+
+
+
+
 	buildThings S,
 	createThings N,
 	makePlans J,
@@ -166,6 +176,10 @@ inEverydayWork(
 	doesWithOwnWay N,
 	thinksWhatToDo P,
 	startsByDividingWorks J,
+
+
+
+
 	worksAccordingToMood P,
 	followsSchedules J
 )
