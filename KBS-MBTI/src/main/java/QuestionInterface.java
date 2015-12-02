@@ -1045,7 +1045,7 @@ public class QuestionInterface extends javax.swing.JFrame {
                     {
                         System.out.println(" " + i + "-" + selectedquestion[i]);
                     }
-                    getValue();
+                    value = getValue();
                     Classifier classifier = new Classifier();
                     String result = classifier.getResult(value);
                     jLabel9.setText(result);
