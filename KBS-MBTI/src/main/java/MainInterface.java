@@ -988,26 +988,7 @@ public class MainInterface extends javax.swing.JFrame {
                     {
                         System.out.println(" " + i + "-" + selectedquestion[i]);
                     }
-                    jLabel1.setVisible(false);
-                    jLabel2.setVisible(false);
-                    jLabel3.setVisible(false);
-                    jLabel4.setVisible(false);
-                    jLabel5.setVisible(false);
-                    jLabel6.setVisible(false);
-                    jLabel7.setVisible(false);
-                    jRadioButton1.setVisible(false);
-                    jRadioButton2.setVisible(false);
-                    jRadioButton3.setVisible(false);
-                    jRadioButton4.setVisible(false);
-                    jRadioButton5.setVisible(false);
-                    jRadioButton6.setVisible(false);
-                    jRadioButton7.setVisible(false);
-                    jRadioButton8.setVisible(false);
-                    jRadioButton9.setVisible(false);
-                    jRadioButton10.setVisible(false);
-                    jRadioButton11.setVisible(false);
-                    jRadioButton12.setVisible(false);
-                    jToggleButton1.setVisible(false);
+                    ResultInterface result = new ResultInterface();
             default: jLabel2.setText("Halaman " + (qa+1) + " dari 10");
                     jLabel1.setText(question[0]);
                     jRadioButton1.setText(choice1[0]);
