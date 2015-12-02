@@ -50,22 +50,23 @@ public class Classifier{
         String ft = "";
         String jp = "";
         if((int)resultMap.get('I') >= 8) ie = "I";
-        else if((int)resultMap.get('E') >= 8) ie = "E";
+        else ie = "E";
         ie = "(hasPersonality  value " + ie + ")";
         
         if((int)resultMap.get('S') >= 9) ns = "S";
-        else if((int)resultMap.get('N') >= 9) ns = "N";
+        else ns = "N";
         ns = "(hasPersonality  value " + ns + ")";
         
         if((int)resultMap.get('T') >= 7) ft = "T";
-        else if((int)resultMap.get('F') >= 7) ft = "F";
+        else ft = "F";
         ft = "(hasPersonality  value " + ft + ")";
         
         if((int)resultMap.get('J') >= 7) jp = "J";
-        else if((int)resultMap.get('P') >= 7) jp = "P";
+        else jp = "P";
         jp = "(hasPersonality  value " + jp + ")";
         
         String query = "MBTI that (" + ie + " and " + ns + " and " + ft + " and " + jp + ")";
+        System.out.println(query);
         ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
         DLQueryPrinter dlQueryPrinter = new DLQueryPrinter(reasoner, shortFormProvider);
         Set<OWLClass> equivalentClass = dlQueryPrinter.askQuery(query);
@@ -90,7 +91,7 @@ public class Classifier{
     private void loadModel(){
         try{
             manager = OWLManager.createOWLOntologyManager();
-            ontology = manager.loadOntologyFromOntologyDocument(new File(System.getProperty("user.dir").concat(separator).concat("src").concat(separator).concat("owl").concat(separator).concat("MBTI.owl")));
+            ontology = manager.loadOntologyFromOntologyDocument(new File(System.getProperty("user.dir").concat(separator).concat("src").concat(separator).concat("owl").concat(separator).concat("MBTIFinal.owl")));
             System.out.println("Loaded ontology: " + ontology.getOntologyID());
             // We need a reasoner to do our query answering
             reasoner = createReasoner(ontology);
